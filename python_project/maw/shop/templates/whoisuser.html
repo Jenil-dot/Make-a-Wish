@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Add additional CSS in static file -->
+    <!--{% load static %}-->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+<link rel = "icon" href =  
+"https://cdn5.vectorstock.com/i/1000x1000/90/99/hand-giving-present-in-flat-style-gift-vector-18779099.jpg" 
+        type = "image/x-icon" height="120" width="120"> 
+
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+{% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <style>
+
+        {% block style %}
+        {% endblock %}
+
+ body {
+            background: url("{% static '360_F_242772256_PRwokoyoXkDCIISNjfj9N3If0TPFtje8.jpg' %}");
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+
+        }
+    </style>
+
+<body>
+   <b> <i><h2 align="right"> Welcome {{username}}</h2></i></b>
+    
+    <br><br><br><br><br><br>
+    <center><h1><i> For Whose This Wishlist </i></h1><br><br>
+    <style>
+div {
+  margin-bottom:100px 
+}
+</style>
+
+
+    <button type="button" class="btn btn-primary"> ME</button>
+    <script>
+    function onButtonClick(){
+        document.getElementById('textInput').className="form-control";
+        document.getElementById('textInput1').className="form-control";
+        document.getElementById('textInput2').className="form-control";
+        }
+        </script>
+        <style>
+        .hide{
+        display:none;
+        }
+        .show
+        {
+        display:block;
+        }
+    </style>
+        
+
+<!--<div class="mx-0 bg-primary d-inline-block">Spaced Div</div>
+<div class="mx-1 bg-primary d-inline-block">Spaced Div</div>
+<div class="mx-2 bg-primary d-inline-block">Spaced Div</div>
+<div class="mx-3 bg-primary d-inline-block">Spaced Div</div>
+<div class="mx-4 bg-primary d-inline-block">Spaced Div</div>
+<div class="mx-5 bg-primary d-inline-block">Spaced Div</div>-->
+
+<!-- respsonsive viariations -->
+<!--<div class="mx-sm-5 d-inline-block bg-primary">Spaced Div</div>
+<div class="mx-md-5 d-inline-block bg-primary">Spaced Div</div>
+<div class="mx-lg-5 d-inline-block bg-primary">Spaced Div</div>
+<div class="mx-xl-5 d-inline-block bg-primary">Spaced Div</div>-->
+
+
+        
+
+<!--<div class="answer_list" > WELCOME </div>-->
+ 
+
+<input type="button" name="answer" value="ANYONE ELSE" onclick="onButtonClick()">
+<center>
+<div class="form-row justify-content-center" style="margin-top:20px;">
+    <div class="form-group col-mx-6">
+        <input class="hide" type="text" id="textInput"  placeholder="enter firstname">
+
+</div>
+<style>
+    div{
+        margin-bottom: 30px
+    }
+</style>
+ <div class="form-group col-mx-6">
+    <input class="hide" type="text" id="textInput1"  placeholder="enter second name">
+</div>
+</div>
+
+
+
+<div class="form-group mx-md-3" >
+    <input class="hide" type="text" id="textInput2"  placeholder="enter address">
+</div>
+<br> <br>
+    <a class="nav-link" href="/birthdayboy/">Next</a>
+
+</center>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+<!--<!doctype html>
+<html lang="en">
+  <head>-->
+    <!-- Add additional CSS in static file -->
+    <!--{% load static %}-->
+    <!--<link rel="stylesheet" href="{% static 'css/styles.css' %}">-->
+
+
+    <!-- Required meta tags -->
+    <!--<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+
+    <!-- Bootstrap CSS -->
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <style>
+
+    
+ body {
+            background: url("{% static 'plain.jpg' %}");
+            background-color: grey;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+
+        }
+    </style>
+<body>
+    
+    <br><br><br><br><br><br>
+    <center><h1><i> For Whose This Wishlist </i></h1><br><br>
+    <style>
+div {
+  margin-bottom:100px 
+}
+</style>
+
+
+    <button type="button" class="btn btn-primary"> ME</button>
+    <script>
+    function onButtonClick(){
+        document.getElementById('textInput').className="form-control";
+        document.getElementById('textInput1').className="form-control";
+        document.getElementById('textInput2').className="form-control";
+        }
+        </script>
+        <style>
+        .hide{
+        display:none;
+        }
+        .show
+        {
+        display:block;
+        }
+    </style>
+        
+
+
+
+<input type="button" name="answer" value="ANYONE ELSE" onclick="onButtonClick()">
+<center>
+<div class="form-row justify-content-center" style="margin-top:20px;">
+    <div class="form-group col-mx-6">
+        <input class="hide" type="text" id="textInput"  placeholder="Enter First Name" required>
+
+</div>
+<style>
+    div{
+        margin-bottom: 30px
+    }
+</style>
+ <div class="form-group col-mx-6">
+    <input class="hide" type="text" id="textInput1"  placeholder="Enter Second Name" required>
+</div>
+</div>
+
+
+
+<div class="form-group mx-md-3" >
+    <input class="hide" type="text" id="textInput2"  placeholder="Enter Address">
+</div>
+<br> <br>
+    <a class="nav-link" href='/birthdayboy/'>Next</a>
+
+     <div class="onboard-page">
+        
+
+<div id="ctlProgressBar" class="box-progress step-4" data-regtype='2'>
+    <div class="progress-back">
+    </div>
+    <div class="progress-bar">
+        <div class="bar-fill" style="width:44.44445%"></div>
+    </div>
+
+    <div class="profileBlock">
+        
+                <a class="username" href="javascript:void(0)">
+                
+                    <span class="arrow down"></span>
+                </a>
+            </div>
+
+</center>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>-->
+
+<!--<div class="mx-0 bg-primary d-inline-block">Spaced Div</div>
+<div class="mx-1 bg-primary d-inline-block">Spaced Div</div>
+<div class="mx-2 bg-primary d-inline-block">Spaced Div</div>
+<div class="mx-3 bg-primary d-inline-block">Spaced Div</div>
+<div class="mx-4 bg-primary d-inline-block">Spaced Div</div>
+<div class="mx-5 bg-primary d-inline-block">Spaced Div</div>-->
+
+<!-- respsonsive viariations -->
+<!--<div class="mx-sm-5 d-inline-block bg-primary">Spaced Div</div>
+<div class="mx-md-5 d-inline-block bg-primary">Spaced Div</div>
+<div class="mx-lg-5 d-inline-block bg-primary">Spaced Div</div>
+<div class="mx-xl-5 d-inline-block bg-primary">Spaced Div</div>-->
+
+
+        
+
+<!--<div class="answer_list" > WELCOME </div>-->

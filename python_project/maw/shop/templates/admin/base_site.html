@@ -1,0 +1,22 @@
+{# Template: your_app/templates/admin/base_site.html #}
+{% extends "admin/base_site.html" %}
+{% load static i18n %}
+
+{# Setup favicon #}
+{% block extrahead %}
+<link rel="shortcut icon" type="image/png" href="{{MEDIA_URL}}your_logo.png"/>{% endblock %}
+
+{# Setup browser tab label #}
+{% block title %}{{ title }} |  {% trans "MakeAWish" %}{% endblock %}
+
+{# Setup branding #}
+{% block branding %}
+    <h1 id="site-name">
+       <a href="{% url 'admin:index' %}">
+            {# Your logo here #}
+         <img style="background-color: white" src="https://www.charities.org/sites/default/files/MAW%20Updated%20Logo_1.9.2018.PNG" alt="" height="30%" width="30%">
+            <br><br>
+            </span>
+        </a>
+    </h1>
+{% endblock %}

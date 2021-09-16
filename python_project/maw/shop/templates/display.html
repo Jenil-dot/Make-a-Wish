@@ -1,0 +1,238 @@
+<html lang="en">
+  <head>
+    <!-- Add additional CSS in static file -->
+    <!--{% load static %}-->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+<link rel = "icon" href =  
+"https://cdn5.vectorstock.com/i/1000x1000/90/99/hand-giving-present-in-flat-style-gift-vector-18779099.jpg" 
+        type = "image/x-icon" height="120" width="120"> 
+
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body bgcolor="grey">
+
+    <br><br>
+  <style>
+  img{
+
+    height:200px;
+    width:300px;
+        margin-left: 30px;
+        margin-top: 30px;
+
+  }
+
+</style>
+<!--<script type='text/javascript'>
+
+function main()
+{
+
+    var inputFileToLoad = document.createElement("input");
+    inputFileToLoad.type = "file";
+    inputFileToLoad.id = "inputFileToLoad";
+    document.body.appendChild(inputFileToLoad);
+
+    var buttonLoadFile = document.createElement("button");
+    buttonLoadFile.onclick = loadImageFileAsURL;
+    buttonLoadFile.textContent = "display";
+    document.body.appendChild(buttonLoadFile);
+
+   // var inputFileToDelete = document.Element("input");
+    //var inputFileToLoad = document.createElement("input");
+
+
+
+}
+
+
+function loadImageFileAsURL()
+{
+    var filesSelected = document.getElementById("inputFileToLoad").files;
+    if (filesSelected.length > 0)
+    {
+        var fileToLoad = filesSelected[0];
+
+        if (fileToLoad.type.match("image.*"))
+        {
+            var fileReader = new FileReader();
+            fileReader.onload = function(fileLoadedEvent) 
+            {
+                var imageLoaded = document.createElement("img");
+                imageLoaded.src = fileLoadedEvent.target.result;
+                document.body.appendChild(imageLoaded);
+            };
+            fileReader.readAsDataURL(fileToLoad);
+        }
+    }
+}
+
+main();
+
+
+</script>-->
+
+
+<a target="_blank" rel="nofollow" href="http://www.amazon.in?_encoding=UTF8&camp=3626&creative=24822&linkCode=ur2"> Amazon </a>
+
+
+
+
+<table>
+    <tr>
+    {% for i in images %}
+    <td>
+         <div class="card" style="width: 15rem;">
+            <img src="{{i.image.url}}" class="card-img-top" alt="Image" width="300" height="300">
+                        <div class="card-body">
+                             <p class="card-text">
+                            <!--<div> 
+                                <tr> 
+                                    <img src="{{i.image.url}}"> 
+                                 </tr>
+                            </div>-->
+                        </p>
+                      <center> 
+                       <!--<a href="/wishlist/?id={{i.images}}" class="btn btn-primary"> Add To Wishlist</a>-->
+                       <!--<a href="images1.jpeg"> </a>-->
+
+                        <a href='/posts/'> My Wishlist</a>
+                   </center>
+            </div>
+    </td>
+    {% endfor %}
+</tr>
+</table>
+
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+<!--<html lang="en">
+  <head>-->
+    <!-- Add additional CSS in static file -->
+    <!--{% load static %}-->
+    <!--<link rel="stylesheet" href="{% static 'css/styles.css' %}">-->
+
+
+    <!-- Required meta tags -->
+    <!--<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+
+    <!-- Bootstrap CSS -->
+    <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+	<style>
+	img{
+
+		height:200px;
+		width:300px;
+        margin-left: 30px;
+        margin-top: 30px;
+
+	}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-amazon {
+  background:black;
+  color: white;
+}
+</style>-->
+<!--<script type='text/javascript'>
+
+function main()
+{
+
+    var inputFileToLoad = document.createElement("input");
+    inputFileToLoad.type = "file";
+    inputFileToLoad.id = "inputFileToLoad";
+    document.body.appendChild(inputFileToLoad);
+
+    var buttonLoadFile = document.createElement("button");
+    buttonLoadFile.onclick = loadImageFileAsURL;
+    buttonLoadFile.textContent = "display";
+    document.body.appendChild(buttonLoadFile);
+
+   // var inputFileToDelete = document.Element("input");
+    //var inputFileToLoad = document.createElement("input");
+
+
+
+}
+
+
+function loadImageFileAsURL()
+{
+    var filesSelected = document.getElementById("inputFileToLoad").files;
+    if (filesSelected.length > 0)
+    {
+        var fileToLoad = filesSelected[0];
+
+        if (fileToLoad.type.match("image.*"))
+        {
+            var fileReader = new FileReader();
+            fileReader.onload = function(fileLoadedEvent) 
+            {
+                var imageLoaded = document.createElement("img");
+                imageLoaded.src = fileLoadedEvent.target.result;
+                document.body.appendChild(imageLoaded);
+            };
+            fileReader.readAsDataURL(fileToLoad);
+        }
+    }
+}
+
+main();
+
+
+</script>-->
+<!--<a target="_blank" rel="nofollow" href="http://www.amazon.in?_encoding=UTF8&camp=3626&creative=24822&linkCode=ur2" class="fa fa-amazon"> Amazon </a>-->
+
+
+<!--<a target="_blank" rel="nofollow" href="http://www.amazon.in?_encoding=UTF8&camp=3626&creative=24822&linkCode=ur2"> Click Here</a>-->
+
+
+<!--<table>
+    <tr>
+    {% for i in images %}
+    <td>
+        <div> 
+           <tr> <img src="{{i.image.url}}"> </tr>
+        </div>
+    </td>
+    {% endfor %}
+</tr>
+</table>
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>-->
